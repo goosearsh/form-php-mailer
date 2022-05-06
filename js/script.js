@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	const formPreview = document.querySelector('#formPreview');
 
 	formImage.addEventListener('change', () => {
-
+		uploadFile(formImage.files[0]);
 	});
 
 	function uploadFile(file) {
@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			alert('Файл должен быть менее 2 МБ');
 			return;
 		}
-		let reader = new FileReader();
+		var reader = new FileReader();
 		reader.onload = function (e) {
 			formPreview.innerHTML = `<img src="${e.target.result}" alt="Фото"/>`;
 		};
