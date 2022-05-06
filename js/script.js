@@ -1,5 +1,5 @@
-'use strict'
-document.addEventListener('DOMContentLoaded', () => {
+'use strict';
+document.addEventListener('DOMContentLoaded', function () {
 	const form = document.querySelector('#form');
 	form.addEventListener('submit', formSend);
 	async function formSend(e) {
@@ -99,9 +99,6 @@ document.addEventListener('DOMContentLoaded', () => {
 			alert('Ошибка');
 		};
 		reader.readAsDataURL(file);
-
-
-
 
 	}
 
