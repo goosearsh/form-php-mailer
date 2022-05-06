@@ -7,7 +7,7 @@ require 'php-mailer/src/PHPMailer.php';
 
 $mail = new PHPMailer(true);
 $mail->CharSet = 'UTF-8';
-$mail->setLanguage('ru','phpmailer/language/');
+$mail->setLanguage('ru','php-mailer/language/');
 $mail->IsHTML(true);
 
 
