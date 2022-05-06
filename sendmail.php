@@ -17,7 +17,7 @@ $mail->setFrom('valera.grishechkin@inbox.ru','12345');
 
 //Кому
 
-$mail->addAddres('t_urazbayev@mail.ru');
+$mail->addAddress('t_urazbayev@mail.ru');
 
 //Тема письма
 
