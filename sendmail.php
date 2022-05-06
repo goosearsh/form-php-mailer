@@ -2,8 +2,8 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-require 'phpmailer/src/Exception.php';
-require 'phpmailer/src/PHPMailer.php';
+require 'php-mailer/src/Exception.php';
+require 'php-mailer/src/PHPMailer.php';
 
 $mail = new PHPMailer(true);
 $mail->CharSet = 'UTF-8';
@@ -13,11 +13,11 @@ $mail->IsHTML(true);
 
 //От кого письмо
 
-$mail->setFrom('valera.grishechkin','123');
+$mail->setFrom('valera.grishechkin@inbox.ru','123');
 
 //Кому
 
-$mail->addAddres('t_urazbayev');
+$mail->addAddres('t_urazbayev@mail.ru');
 
 //Тема письма
 
