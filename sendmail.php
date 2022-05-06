@@ -11,7 +11,7 @@ $mail->setLanguage('ru', 'phpmailer/language/');
 $mail->IsHTML(true);
 
 
-//От кого письмо
+//От кого письмо		
 
 $mail->setFrom('valera.grishechkin@inbox.ru','12345');
 
@@ -78,3 +78,5 @@ $response = ['message' => $message];
 
 header('Content-type: application/json');
 echo json_encode($response);
+
+?>
