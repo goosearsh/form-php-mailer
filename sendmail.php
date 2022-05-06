@@ -13,11 +13,11 @@ $mail->IsHTML(true);
 
 //От кого письмо
 
-$mail->setFrom('valera.grishechkin@inbox.ru','');
+$mail->setFrom('valera.grishechkin','123');
 
 //Кому
 
-$mail->addAddres('t_urazbayev@mail.ru');
+$mail->addAddres('t_urazbayev');
 
 //Тема письма
 
